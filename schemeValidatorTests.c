@@ -28,3 +28,19 @@ void runtest(char *input, int expected, int testNum) {
   int actual = schemeValidator(input);
   cr_assert_eq(expected,actual, "Test %d: schemeValidator(%s) returned %d   but expected %d", testNum, input, actual, expected);
 }
+
+
+void runIsSpecialTest(char input, bool expected, int testNum) {
+  bool actual = isSpecial(input);
+  cr_assert_eq(expected,actual, "Test %d isSpecial(%s) returned %d   but expected %d", testNum, input, actual, expected);
+}
+
+void runAlphaTest(char input, bool expected, int testNum) {
+  bool actual = isAlpha(input);
+  cr_assert_eq(expected,actual, "Test %d: isAlpha(%s) returned %d   but expected %d", testNum, input, actual, expected);
+}
+
+void runDigittest(char input, bool expected, int testNum) {
+  bool actual = isDigit(input);
+  cr_assert_eq(expected,actual, "Test %d: isDigit(%s) returned %d   but expected %d", testNum, input, actual, expected);
+}
