@@ -26,7 +26,7 @@ bool isSpecial(char c) {
   bool result = false;
   if (c == '+') result = true;
   else if (c == '-') result = true;
-  else result = true;
+  else if (c == '.') result = true;
   return result;
 }
 
