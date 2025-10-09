@@ -34,7 +34,8 @@ bool isSpecial(char c) {
 }
 
 bool isDigit(char c) {
-  return 0 < c-48 && c-48 < 9;
+  int charNum = (int)c - 48;
+  return 0 <= charNum  &&  charNum <= 9;
 }
 
 
