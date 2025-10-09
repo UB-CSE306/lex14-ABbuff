@@ -31,7 +31,11 @@ Test(helpers, test04) {  runIsSpecialTest("*", -1);  }
 Test(helpers, test05) {  runIsSpecialTest('a', -1);  }
 Test(helpers, test06) {  runIsSpecialTest('4', -1);  }
 
-Test(helpers, test07) {  runAlphaTest("1", 1);  }
+Test(helpers, test07) {  runAlphaTest('0', 1);  }
+Test(helpers, test08) {  runAlphaTest('9', 1);  }
+Test(helpers, test09) {  runAlphaTest('+', -1);  }
+Test(helpers, test10) {  runAlphaTest('a', -1);  }
+Test(helpers, test10) {  runAlphaTest('A', -1);  }
 
 
 void runtest(char *input, int expected, int testNum) {
