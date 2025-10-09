@@ -5,10 +5,11 @@ int schemeValidator(char scheme[]) {
   if (isAlpha(scheme[1])) {
     result = 0; 
     int i=2;
-    while (scheme[i++] != '\0') {
+    while (scheme[i] != '\0') {
       if (!isAlpha(scheme[i])) result = -1;
       else if (!isDigit(scheme[i])) result = -1;
       else if (!isSpecial(scheme[i])) result = -1;
+      i++;
     }
   }
   if ('A' < scheme[1] && scheme[1] < 'Z') {
@@ -30,7 +31,7 @@ bool isSpecial(char c) {
 }
 
 bool isDigit(char c) {
-  return 0 < c && c < 9;
+  return 0 < c-48 && c-48 < 9;
 }
 
 
