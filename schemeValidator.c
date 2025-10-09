@@ -2,7 +2,7 @@
 
 int schemeValidator(char scheme[]) {
   int result = -1;
-  if (isAlpha(scheme[1])) {
+  if (isAlpha(scheme[0])) {
     result = 0; 
     int i=2;
     while (scheme[i] != '\0') {
