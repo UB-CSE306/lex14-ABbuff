@@ -35,7 +35,13 @@ Test(helpers, test07) {  runAlphaTest('0', 1);  }
 Test(helpers, test08) {  runAlphaTest('9', 1);  }
 Test(helpers, test09) {  runAlphaTest('+', -1);  }
 Test(helpers, test10) {  runAlphaTest('a', -1);  }
-Test(helpers, test10) {  runAlphaTest('A', -1);  }
+Test(helpers, test11) {  runAlphaTest('A', -1);  }
+
+Test(helpers, test12) {  runDigitTest('0', 1);  }
+Test(helpers, test13) {  runDigitTest('9', 1);  }
+Test(helpers, test14) {  runDigitTest('a', -1);  }
+Test(helpers, test15) {  runDigitTest('Z', -1);  }
+Test(helpers, test16) {  runDigitTest('+', -1);  }
 
 
 void runtest(char *input, int expected, int testNum) {
@@ -54,7 +60,7 @@ void runAlphaTest(char input, bool expected, int testNum) {
   cr_assert_eq(expected,actual, "Test %d: isAlpha(%s) returned %d   but expected %d", testNum, input, actual, expected);
 }
 
-void runDigittest(char input, bool expected, int testNum) {
+void runDigitTest(char input, bool expected, int testNum) {
   bool actual = isDigit(input);
   cr_assert_eq(expected,actual, "Test %d: isDigit(%s) returned %d   but expected %d", testNum, input, actual, expected);
 }
