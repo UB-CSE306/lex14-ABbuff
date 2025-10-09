@@ -1,0 +1,71 @@
+[----] schemeValidatorTests.c:52: Assertion Failed
+[----]
+[----]   Test 4: schemeValidator(x4567+) returned -1   but expected 1
+[----]
+[----] schemeValidatorTests.c:52: Assertion Failed
+[----]
+[----]   Test 5: schemeValidator(x4567-) returned -1   but expected 1
+[----]
+[----] schemeValidatorTests.c:52: Assertion Failed
+[----]
+[----]   Test 6: schemeValidator(x4567.) returned -1   but expected 1
+[----]
+[----] schemeValidatorTests.c:52: Assertion Failed
+[----]
+[----]   Test 7: schemeValidator(x45XSD5q) returned -1   but expected 1
+[----]
+[----] schemeValidatorTests.c:52: Assertion Failed
+[----]
+[----]   Test 9: schemeValidator(x4) returned -1   but expected 1
+[----]
+[----] schemeValidatorTests.c:52: Assertion Failed
+[----]
+[----]   Test 10: schemeValidator(X46) returned -1   but expected 1
+[----]
+[----] schemeValidatorTests.c:58: Assertion Failed
+[----]
+[----]   isSpecial(%) returned 1   but expected 0
+[----]
+[----] schemeValidatorTests.c:58: Assertion Failed
+[----]
+[----]   isSpecial(*) returned 1   but expected 0
+[----]
+[----] schemeValidatorTests.c:58: Assertion Failed
+[----]
+[----]   isSpecial(a) returned 1   but expected 0
+[----]
+[----] schemeValidatorTests.c:58: Assertion Failed
+[----]
+[----]   isSpecial(4) returned 1   but expected 0
+[----]
+[----] schemeValidatorTests.c:63: Assertion Failed
+[----]
+[----]   isAlpha(a) returned 0   but expected 1
+[----]
+[----] schemeValidatorTests.c:63: Assertion Failed
+[----]
+[----]   isAlpha(Z) returned 0   but expected 1
+[----]
+[----] schemeValidatorTests.c:68: Assertion Failed
+[----]
+[----]   isDigit(0) returned 0   but expected 1
+[----]
+[----] schemeValidatorTests.c:68: Assertion Failed
+[----]
+[----]   isDigit(9) returned 0   but expected 1
+[----]
+[FAIL] coverage::test04: (0.00s)
+[FAIL] coverage::test05: (0.00s)
+[FAIL] coverage::test06: (0.00s)
+[FAIL] coverage::test07: (0.00s)
+[FAIL] coverage::test09: (0.00s)
+[FAIL] coverage::test10: (0.00s)
+[FAIL] helpers::test03: (0.00s)
+[FAIL] helpers::test04: (0.00s)
+[FAIL] helpers::test05: (0.00s)
+[FAIL] helpers::test06: (0.00s)
+[FAIL] helpers::test07: (0.00s)
+[FAIL] helpers::test08: (0.00s)
+[FAIL] helpers::test12: (0.00s)
+[FAIL] helpers::test13: (0.00s)
+[====] Synthesis: Tested: 30 | Passing: 16 | Failing: 14 | Crashing: 0
