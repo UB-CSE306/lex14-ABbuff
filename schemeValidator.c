@@ -19,7 +19,10 @@ int schemeValidator(char scheme[]) {
 }
 
 bool isAlpha(char c) {
-  return 'A' <= c && c <= 'z';
+  bool isLetter;
+  isLetter = ('A' <= c && c <= 'Z')  ||  ('a' <= c && c <= 'z');
+
+  return isLetter;
 }
 
 bool isSpecial(char c) {
