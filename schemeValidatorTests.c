@@ -23,6 +23,16 @@ Test(coverage, test10) {  runtest("X46", 1, 10);  }
 Test(coverage, test11) {  runtest("x4567%", -1, 11);  }
 Test(coverage, test12) {  runtest("x/3c", -1, 12);  }
 
+Test(helpers, test00) {  runIsSpecialTest('+', 1);  }
+Test(helpers, test01) {  runIsSpecialTest('-', 1);  }
+Test(helpers, test02) {  runIsSpecialTest('.', 1);  }
+Test(helpers, test03) {  runIsSpecialTest("%", -1);  }
+Test(helpers, test04) {  runIsSpecialTest("*", -1);  }
+Test(helpers, test05) {  runIsSpecialTest('a', -1);  }
+Test(helpers, test06) {  runIsSpecialTest('4', -1);  }
+
+Test(helpers, test07) {  runAlphaTest("1", 1);  }
+
 
 void runtest(char *input, int expected, int testNum) {
   int actual = schemeValidator(input);
